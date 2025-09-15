@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confirmação de Senha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Criar Conta</h2>
+
+    <form id="formSenha">
+      <label for="senha">Senha</label>
+      <input
+        type="password"
+        id="senha"
+        name="senha"
+        placeholder="Digite sua senha"
+        required
+        minlength="8"
+      >
+
+      <label for="confirmarSenha">Confirmar Senha</label>
+      <input
+        type="password"
+        id="confirmarSenha"
+        name="confirmarSenha"
+        placeholder="Repita sua senha"
+        required
+        minlength="8"
+      >
+
+      <button type="submit">Cadastrar</button>
+      <p id="mensagem" class="mensagem"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
